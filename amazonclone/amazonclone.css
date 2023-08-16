@@ -14,14 +14,12 @@
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  
 }
 
 .nav-logo {
   height: 50px;
   width: 150px;
   padding: 1px;
-  
 }
 
 .logo {
@@ -37,29 +35,28 @@
 }
 
 .border:hover {
-  border: 2px solid white;
+  border: 2px solid rgb(156, 149, 149);
 }
 
 .navbar1 {
   padding: 8px;
 }
 
-.first-text{
-    font-size: large;
-    padding-bottom: 3px;
-    padding-left: 15px;
-    color: rgba(240, 240, 217, 0.82);
+.first-text {
+  font-size: large;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  color: rgba(240, 240, 217, 0.82);
 }
-.second-text{
-    font-weight:bold;
-    padding-left: 5px;
+.second-text {
+  font-weight: bold;
+  padding-left: 5px;
 }
-.fa-solid{
-    font-size: 20px;
+.fa-solid {
+  font-size: 20px;
 }
 .location {
   display: flex;
-
 }
 
 .search-box {
@@ -73,8 +70,8 @@
   border: 0px;
 }
 
-.search-box:hover{
-    border: 2px solid orange;
+.search-box:hover {
+  border: 2px solid orange;
 }
 
 .select {
@@ -92,7 +89,6 @@
   text-align: center;
   border: 0px;
   font-size: large;
- 
 }
 
 .button {
@@ -113,11 +109,11 @@ option {
 
 /* nav box 4 */
 
-span{
-    font-size: 0.8rem;
+span {
+  font-size: 0.8rem;
 }
 
-.account{
-    font-size: 0.85rem;
-    font-weight: bold;
+.account {
+  font-size: 0.85rem;
+  font-weight: bold;
 }
