@@ -23,7 +23,7 @@ header {
 .nav-logo {
   height: 32px;
   width: 100px;
-  padding: 1px;
+  padding: 5px;
   padding-top: 8px;
 }
 
@@ -188,6 +188,7 @@ span {
 
 .other-menus p {
   margin-left: 15px;
+  padding: 5px;
 }
 
 .shop {
@@ -210,8 +211,8 @@ span {
 }
 
 .banner-text {
-  font-size: 15px;
-  width: 90%;
+  font-size: 18px;
+  width: 95%;
   margin-bottom: 30px;
   background-color: aliceblue;
   padding: 10px 14px;
@@ -221,4 +222,88 @@ span {
 .banner-text a {
   color: rgb(49, 82, 230);
   text-decoration: none;
+}
+
+/* Shopimg Section*/
+
+.shopping {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  padding-bottom: 100px;
+}
+
+.item1 {
+  height: 510px;
+  width: 23%;
+}
+
+.contain {
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 15px 0px 15px;
+}
+
+.item1-img {
+  height: 390px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contain p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(83, 83, 198);
+}
+
+.contain h2 {
+  padding-top: 10px;
+  color: rgb(23, 25, 24);
+}
+
+/* lower banner*/
+
+.lower-banner {
+  padding-top: 10px;
+  height: 260px;
+  width: 95%;
+  background-color: rgb(255, 255, 255);
+}
+
+.lower-banner h2 {
+  padding-left: 12px;
+}
+
+.lower-banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.imglower {
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+}
+
+/* footer */
+
+.footerbar a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+  font-size: larger;
+  background-color: #3f4750;
+  padding: 15px 0px 15px 0px;
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
 }
