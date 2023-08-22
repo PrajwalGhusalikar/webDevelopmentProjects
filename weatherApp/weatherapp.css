@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(134, 134, 183);
+  background-color: rgb(74, 74, 74);
 }
 
 .template {
@@ -73,6 +73,10 @@ body {
 .temp-text h1 {
   font-size: 65px;
   font-family: "Times New Roman", Times, serif;
+}
+
+.temp-text h2 {
+  font-size: 40px;
 }
 
 .report-pannel {

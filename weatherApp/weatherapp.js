@@ -12,14 +12,29 @@ async function checkWeather(city) {
 
   console.log(data);
 
-  document.getElementById("temp").innerHTML = Math.round(data.main.temp) + "°c";
-  document.getElementById("city").innerHTML = data.name;
-  document.getElementById("wind").innerHTML = data.wind.speed + "kph";
-  document.getElementById("humidity").innerHTML = data.main.humidity + "%";
-
   if (data.cod == "404") {
-    document.getElementById("city").innerHTML = " no city ";
+    document.getElementById("city").innerHTML = data.message;
+    document.getElementById("city").style.color = "red";
+    document.getElementById("temp").innerHTML = " Enter Valid City";
+    document.getElementById("temp").style.fontSize = "30px";
+    weatherImg.style.backgroundImage = "url('assets/404.png')";
+    weatherImg.style.backgroundSize = "contain";
+    weatherImg.style.backgroundRepeat = "no-repeat";
+    document.getElementById("wind").innerHTML = " ";
+    document.getElementById("humidity").innerHTML = " ";
+    console.clear(data);
   } else {
+    document.getElementById("temp").innerHTML =
+      Math.round(data.main.temp) + "°c";
+    document.getElementById("city").innerHTML = data.name;
+    document.getElementById("wind").innerHTML = data.wind.speed + "kph";
+    document.getElementById("humidity").innerHTML = data.main.humidity + "%";
+    document.getElementById("city").style.color = "green";
+
+    weatherImg.style.backgroundSize = "contain";
+    weatherImg.style.backgroundRepeat = "no-repeat";
+    document.getElementById("temp").style.fontSize = "65px";
+
     if (data.weather[0].main == "Clouds") {
       weatherImg.style.backgroundImage = "url('assets/cloudy.png')";
       windText.style.color = "lightblue";
@@ -28,6 +43,9 @@ async function checkWeather(city) {
       windText.style.color = "lightpink";
     } else if (data.weather[0].main == "Rain") {
       weatherImg.style.backgroundImage = "url('assets/rain.png')";
+      windText.style.color = "blue";
+    } else if (data.weather[0].main == "Mist") {
+      weatherImg.style.backgroundImage = "url('assets/mist.png')";
       windText.style.color = "blue";
     }
   }
